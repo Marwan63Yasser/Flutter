@@ -1,3 +1,5 @@
+import 'package:app4/descScreen.dart';
+import 'package:app4/homeScreen.dart';
 import 'package:app4/hotelScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,16 +12,12 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: Text("Rooms List"),
-          leading: Icon(Icons.arrow_back),
-        ),
-        backgroundColor: Colors.white,
-
-        body: mywidget(),
-      ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        "/": (context) => Home(),
+        "rooms":(context) => MyWidget(),
+      },
     );
   }
 }
