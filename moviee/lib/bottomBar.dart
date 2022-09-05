@@ -13,7 +13,7 @@ class BottomBarScreen extends StatefulWidget {
 class _BottomBarScreenState extends State<BottomBarScreen> {
   int selected = 1;
   List<Widget> Screens = [ListScreen(), HomeScreen(), FilterScreen()];
-  List<String> titles = ["Explore", "See Movie", "Search"];
+  List<String> titles = ["Explore", "See Movies", "Search"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

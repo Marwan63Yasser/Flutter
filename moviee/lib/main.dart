@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: DefaultTabController(length: 3, 
-      child: BottomBarScreen(),),
+      home: DefaultTabController(length: 3, child: BottomBarScreen(),),
     );
   }
 }

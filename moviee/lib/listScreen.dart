@@ -38,7 +38,7 @@ class _ListScreenState extends State<ListScreen> {
         child: SpinKitDualRing(color: Colors.white,)
       );
     } else {
-      return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      return GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
             itemCount: list.length,
             itemBuilder: (context, index) => MovieCard(mov: list[index]),
       );
